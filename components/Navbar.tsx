@@ -6,6 +6,7 @@ import { signOut } from '@/lib/actions/auth.action';
 import { redirect } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import Loader from './Loader'
 const Navbar = () => {
     const [loading, setLoading] = useState(false);
     const pathname = usePathname();
@@ -28,7 +29,8 @@ const Navbar = () => {
 
     return (
         <>
-            
+            {loading && <Loader isVisible={loading} minDisplayTime={5000} onComplete={handleLoadingComplete}
+            />}
             <nav className="shadow-md py-4 px-6 flex items-center animate-fadeIn justify-between">
                 <Link href="/" className="flex items-center gap-2">
                     <Image src="/logo.svg" alt="logo" width={40} height={40} />
