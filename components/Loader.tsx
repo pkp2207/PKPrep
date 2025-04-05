@@ -11,7 +11,7 @@ interface LoaderProps {
 const Loader: React.FC<LoaderProps> = ({ 
     isVisible, 
     onComplete, 
-    minDisplayTime = 3000 // Default to 1.5 seconds minimum display time
+    minDisplayTime = 5000 
 }) => {
     const [shouldDisplay, setShouldDisplay] = useState(isVisible);
 
