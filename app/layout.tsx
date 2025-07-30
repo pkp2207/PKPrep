@@ -12,6 +12,9 @@ const monaSans = Mona_Sans({
 export const metadata: Metadata = {
   title: "PKPrep",
   description: "An AI-powered platform for preparing for interviews.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -21,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      
       <body
         className={`${monaSans.className} antialiased pattern`}
       >

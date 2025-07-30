@@ -51,7 +51,7 @@ const Navbar = () => {
       
       <nav className="shadow-md py-4 px-6 flex items-center animate-fadeIn justify-between relative">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.svg" alt="logo" width={40} height={40} />
+          <Image src="/logo-final.png" alt="logo" width={70} height={70} />
           <h2 className="text-2xl font-semibold text-white">PKPrep</h2>
         </Link>
         
